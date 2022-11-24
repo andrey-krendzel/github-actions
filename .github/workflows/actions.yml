@@ -1,7 +1,14 @@
 name: Actions Workflow
-
+#post to https://api.github.com/andrey-krendzel/github-actions/dispatches
+#header Acceept: application/vn.dithub.everest-preview+json
+#content-type: application/json
 on: 
-  push:
+  repository-dispatch:
+    types: [build]
+  # schedule:
+   # - cron: "0/5 * * * *"
+   # - cron: "0/6 * * * *"
+  # push:
   pull_request:
     types: [closed, assigned, opened, reopened]
 
