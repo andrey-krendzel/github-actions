@@ -1,4 +1,4 @@
-Name: Container
+name: Container
 on: push
 
 jobs:
@@ -11,4 +11,3 @@ jobs:
         run: |
           node -v
           cat /etc/os-release
-          
