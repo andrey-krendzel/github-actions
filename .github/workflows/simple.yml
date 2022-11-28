@@ -4,10 +4,14 @@ on: [pull]
 jobs: 
   run-shell-command: 
     runs-on: ubuntu-latest
+    timeout-minutes: 360
     steps:
       - name: echo a string
         run: echo "Hello World"
+        timeout-minutes: 0
+        continue-on-error: true
       - name: multiline script
+        if: failure()
         run: |
           node -v 
           npm -v

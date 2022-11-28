@@ -1,3 +1,7 @@
 minikube-linux-amd64
 secret.json
 kubectl
+.github/workflows/actions.yml
+.github/workflows/context.yml
+.github/workflows/env.yml
+.github/workflows/simple.yml
