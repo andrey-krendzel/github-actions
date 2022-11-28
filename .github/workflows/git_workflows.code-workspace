@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../js"
+		},
+		{
+			"path": "../../../java_springboot"
+		}
+	],
+	"settings": {}
+}
